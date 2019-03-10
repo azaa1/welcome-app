@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" href="/static/stylesheets/welcome-template.css">
+
+			<!-- The Welcome struct is received within the HTML and we just need to use the . operator and retrieve the information we want -->
+			<title>Welcome {{.Name}}</title>
+	</head>
+
+        <div>
+
+        <button class="button">Home</button>
+        <button class="button">Services</button>
+        <input type="button" class="button" value="Products">
+
+        </div>
+
+        <body>
+
+        <p>Click the button to display the time.</p>
+
+        <button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+
+        <p id="demo"></p>
+
+        </body>
+
+	<body>
+		<div class="welcome center">Welcome {{.Name}}, it is {{.Time}}</div>
+	</body>
+
+</html>
